@@ -16,7 +16,6 @@ class Rating extends Model
         'review',
     ];
 
-    // العلاقة مع المستخدم: كل تقييم ينتمي إلى مستخدم
     public function user()
     {
         return $this->belongsTo(User::class);

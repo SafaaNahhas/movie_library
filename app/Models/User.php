@@ -46,7 +46,6 @@ class User extends Authenticatable implements JWTSubject
             'password' => 'hashed',
         ];
     }
-      // العلاقة مع التقييمات: كل مستخدم يمكن أن يكون لديه العديد من التقييمات
       public function ratings()
       {
           return $this->hasMany(Rating::class);
