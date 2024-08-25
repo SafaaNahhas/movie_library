@@ -21,7 +21,6 @@ class Rating extends Model
         return $this->belongsTo(User::class);
     }
 
-    // العلاقة مع الفيلم: كل تقييم ينتمي إلى فيلم
     public function movie()
     {
         return $this->belongsTo(Movie::class);
